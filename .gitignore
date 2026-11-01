@@ -7,3 +7,6 @@ __pycache__/
 
 # Notebooks
 .ipynb_checkpoints/
+
+# Raw and derived data (re-download with scripts/download_data.py)
+data/

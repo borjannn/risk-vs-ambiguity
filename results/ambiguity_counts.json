@@ -1,0 +1,63 @@
+{
+  "choices13k": {
+    "rows_total": 14568,
+    "problems_total": 13006,
+    "peterson_check_rows_feedback_and_not_amb": 9831,
+    "amb_rows": 2809,
+    "amb_rows_feedback": 2357,
+    "amb_rows_no_feedback": 452,
+    "amb_problems": 2513,
+    "amb_problems_no_feedback": 452,
+    "amb_problems_by_feedback_coverage": {
+      "feedback_only": 2061,
+      "both": 296,
+      "no_feedback_only": 156
+    },
+    "amb_problems_effective_(B_has_>1_outcome)": 2513,
+    "amb_problems_two_outcome_B": 1348,
+    "amb_problems_two_outcome_B_no_feedback": 254,
+    "amb_participants_per_row": {
+      "min": 15.0,
+      "mean": 16.6,
+      "max": 33.0
+    },
+    "amb_participant_rows_no_feedback": 7326,
+    "amb_problems_with_exact_risk_twin": 10
+  },
+  "cpc18": {
+    "games_total": 270,
+    "subjects_total": 926,
+    "choices_total": 694500,
+    "amb_games": 40,
+    "games_by_split": {
+      "CPC15_sets_1-5": {
+        "total": 150,
+        "amb": 19
+      },
+      "CPC18_exp1_sets_6-7": {
+        "total": 60,
+        "amb": 9
+      },
+      "CPC18_test_sets_8-9": {
+        "total": 60,
+        "amb": 12
+      }
+    },
+    "calibration_sets_1-7": {
+      "games": 210,
+      "amb": 28
+    },
+    "amb_games_effective_(B_has_>1_outcome)": 40,
+    "amb_games_two_outcome_B": 26,
+    "amb_games_with_safe_A": 17,
+    "amb_subjects_per_game": {
+      "min": 80.0,
+      "mean": 104.4,
+      "max": 125.0
+    },
+    "amb_choices_total": 104450,
+    "amb_choices_no_feedback_block": 20890,
+    "amb_subject_game_pairs": 4178,
+    "amb_games_with_exact_risk_twin": 0
+  }
+}

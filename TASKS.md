@@ -6,9 +6,9 @@ Owners and the reasoning behind the split are in [`PROJECT_PLAN.md`](PROJECT_PLA
 
 | # | Status | Task | Assigned | Link | Notes / Output |
 |---|---|---|---|---|---|
-| 1 | To Do | Count the ambiguity trials in choices13k and CPC18 directly from the raw releases | Borjan | [link](https://zenodo.org/records/2571510) | Do this first. The source paper's preprocessing drops ambiguous-option trials, so the published numbers do not answer this. |
+| 1 | Done | Count the ambiguity trials in choices13k and CPC18 directly from the raw releases | Borjan | [link](https://zenodo.org/records/2571510) | Do this first. The source paper's preprocessing drops ambiguous-option trials, so the published numbers do not answer this. **Output:** choices13k 2,513 ambiguous problems (452 no-feedback); CPC18 40 of 270 games. See [`results/task01_ambiguity_counts.md`](results/task01_ambiguity_counts.md). |
 | 2 | To Do | Run the power analysis: the smallest ambiguity effect we could detect at each subset size | Andrej |  | The go/no-go gate for the project. An underpowered null on ambiguity would tell us nothing, which defeats the design. |
-| 3 | To Do | Choose the main dataset, and decide whether the synthetic Ellsberg set is the main or the supporting stimulus set | Borjan & Andrej |  | CPC18 has a designed ambiguity condition but only 210 problems. choices13k is larger, but its ambiguity trials are incidental. |
+| 3 | To Do | Choose the main dataset, and decide whether the synthetic Ellsberg set is the main or the supporting stimulus set | Borjan & Andrej |  | CPC18 has a designed ambiguity condition but only 40 ambiguous games (of 270; task 1). choices13k is larger, but its ambiguity trials are incidental. |
 | 4 | To Do | Fix the human ambiguity-aversion target and name the design it comes from | Andrej | [link](https://link.springer.com/article/10.1007/s11238-016-9544-1) | About 66% averse in two-urn designs, and about 27% in single-urn designs. H3C cannot be tested until one is chosen and justified. |
 | 5 | To Do | Write the pre-registration, including the H3B positive prediction and all thresholds | Borjan & Andrej |  | H3B is the interesting outcome, so its prediction has to be fixed in advance, or it will read as a null explained away afterwards. |
 
