@@ -76,4 +76,6 @@ def load_cpc18(raw=None):
     games["n"] = by_game.size()
     games["rate"] = by_game.mean()
     games["rate_se2"] = by_game.var() / by_game.size()
+    # Blocks 2-5 (trials 6-25) have full feedback: kept separate, since learning confounds them.
+    games["rate_feedback"] = raw[raw.block > 1].groupby("GameID").B.mean()
     return games

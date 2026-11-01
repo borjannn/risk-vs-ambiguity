@@ -1,0 +1,49 @@
+{
+  "prompt_version": "v1",
+  "prompt_template": "You are choosing between two options.\nOption A: {A}\nOption B: {B}\nWhich option do you choose? Answer with A or B.\nAnswer:",
+  "rows": 39308,
+  "c13k": {
+    "problems": 13006,
+    "problems_with_all_three_conditions": 12751,
+    "problems_true_only_(single-outcome_B)": 255,
+    "source_ambiguous_problems": 2513,
+    "source_ambiguous_with_no_feedback_human_rate": 452,
+    "uniform_twin_identical_to_true_twin": 729,
+    "balance": {
+      "ambiguous": {
+        "prompt_chars_mean": 250.5,
+        "ev_B_shown_minus_true_mean_abs": null
+      },
+      "true": {
+        "prompt_chars_mean": 240.6,
+        "ev_B_shown_minus_true_mean_abs": 0.0
+      },
+      "uniform": {
+        "prompt_chars_mean": 241.4,
+        "ev_B_shown_minus_true_mean_abs": 14.694
+      }
+    }
+  },
+  "cpc18": {
+    "problems": 270,
+    "problems_with_all_three_conditions": 265,
+    "problems_true_only_(single-outcome_B)": 5,
+    "source_ambiguous_problems": 40,
+    "source_ambiguous_with_no_feedback_human_rate": 40,
+    "uniform_twin_identical_to_true_twin": 26,
+    "balance": {
+      "ambiguous": {
+        "prompt_chars_mean": 259.3,
+        "ev_B_shown_minus_true_mean_abs": null
+      },
+      "true": {
+        "prompt_chars_mean": 249.5,
+        "ev_B_shown_minus_true_mean_abs": 0.0
+      },
+      "uniform": {
+        "prompt_chars_mean": 248.2,
+        "ev_B_shown_minus_true_mean_abs": 15.87
+      }
+    }
+  }
+}
