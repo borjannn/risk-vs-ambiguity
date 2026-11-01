@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# uv / virtualenv
+.venv/
+
+# Notebooks
+.ipynb_checkpoints/
