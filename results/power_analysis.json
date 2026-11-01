@@ -1,0 +1,248 @@
+{
+  "settings": {
+    "alpha": 0.05,
+    "power": 0.8,
+    "layers_for_correction": 42,
+    "tost_margin": 0.05,
+    "auc_target": 0.75
+  },
+  "human_ambiguity_effect": {
+    "choices13k_no_feedback": {
+      "baseline_r2_on_risky_out_of_fold": 0.71,
+      "baseline_residual_sd_on_risky": 0.111,
+      "all_ambiguous": {
+        "n_problems": 452,
+        "gap_vs_true_probabilities": {
+          "mean": 0.058,
+          "ci95": [
+            0.044,
+            0.074
+          ],
+          "sd": 0.164
+        },
+        "gap_vs_uniform_prior": {
+          "mean": 0.011,
+          "ci95": [
+            0.001,
+            0.021
+          ],
+          "sd": 0.113
+        },
+        "best_uniform_prior_weight": {
+          "w": 1.0,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "attitude_beyond_prior": {
+          "mean": 0.011,
+          "ci95": [
+            0.002,
+            0.027
+          ],
+          "sd": 0.113
+        },
+        "reliability_of_human_gap": 0.5
+      },
+      "two_outcome_B": {
+        "n_problems": 254,
+        "gap_vs_true_probabilities": {
+          "mean": 0.02,
+          "ci95": [
+            -0.001,
+            0.04
+          ],
+          "sd": 0.161
+        },
+        "gap_vs_uniform_prior": {
+          "mean": -0.012,
+          "ci95": [
+            -0.026,
+            0.001
+          ],
+          "sd": 0.11
+        },
+        "best_uniform_prior_weight": {
+          "w": 0.75,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "attitude_beyond_prior": {
+          "mean": -0.007,
+          "ci95": [
+            -0.024,
+            0.005
+          ],
+          "sd": 0.11
+        },
+        "reliability_of_human_gap": 0.47
+      }
+    },
+    "cpc18_block1": {
+      "baseline_r2_on_risky_out_of_fold": 0.75,
+      "baseline_residual_sd_on_risky": 0.12,
+      "all_ambiguous": {
+        "n_problems": 40,
+        "gap_vs_true_probabilities": {
+          "mean": 0.01,
+          "ci95": [
+            -0.056,
+            0.073
+          ],
+          "sd": 0.206
+        },
+        "gap_vs_uniform_prior": {
+          "mean": -0.071,
+          "ci95": [
+            -0.111,
+            -0.03
+          ],
+          "sd": 0.135
+        },
+        "best_uniform_prior_weight": {
+          "w": 1.0,
+          "ci95": [
+            0.25,
+            1.0
+          ]
+        },
+        "attitude_beyond_prior": {
+          "mean": -0.071,
+          "ci95": [
+            -0.108,
+            -0.004
+          ],
+          "sd": 0.135
+        },
+        "reliability_of_human_gap": 0.93
+      },
+      "two_outcome_B": {
+        "n_problems": 26,
+        "gap_vs_true_probabilities": {
+          "mean": -0.012,
+          "ci95": [
+            -0.089,
+            0.065
+          ],
+          "sd": 0.203
+        },
+        "gap_vs_uniform_prior": {
+          "mean": -0.055,
+          "ci95": [
+            -0.105,
+            -0.004
+          ],
+          "sd": 0.13
+        },
+        "best_uniform_prior_weight": {
+          "w": 0.75,
+          "ci95": [
+            0.25,
+            1.0
+          ]
+        },
+        "attitude_beyond_prior": {
+          "mean": -0.055,
+          "ci95": [
+            -0.106,
+            -0.004
+          ],
+          "sd": 0.126
+        },
+        "reliability_of_human_gap": 0.93
+      }
+    }
+  },
+  "sensitivity": {
+    "c13k_all_ambiguous": {
+      "n": 2513,
+      "has_human_no_feedback_data": false,
+      "paired_mde_d": 0.056,
+      "paired_mde_d_layer_corrected": 0.082,
+      "auc_ci95_halfwidth_at_0.75": 0.013,
+      "tost_max_readout_sd": 0.856,
+      "tost_max_readout_sd_layer_corrected": 0.58,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.009,
+      "min_model_gap_for_ablation_third_detectable": 0.028
+    },
+    "c13k_two_outcome": {
+      "n": 1348,
+      "has_human_no_feedback_data": false,
+      "paired_mde_d": 0.076,
+      "paired_mde_d_layer_corrected": 0.111,
+      "auc_ci95_halfwidth_at_0.75": 0.018,
+      "tost_max_readout_sd": 0.627,
+      "tost_max_readout_sd_layer_corrected": 0.424,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.012,
+      "min_model_gap_for_ablation_third_detectable": 0.037
+    },
+    "c13k_no_feedback": {
+      "n": 452,
+      "has_human_no_feedback_data": true,
+      "paired_mde_d": 0.132,
+      "paired_mde_d_layer_corrected": 0.193,
+      "auc_ci95_halfwidth_at_0.75": 0.032,
+      "tost_max_readout_sd": 0.363,
+      "tost_max_readout_sd_layer_corrected": 0.245,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.022,
+      "min_model_gap_for_ablation_third_detectable": 0.065,
+      "model_human_mde_r_observed": 0.131,
+      "model_human_mde_r_true": 0.186,
+      "human_correlation_ceiling": 0.71,
+      "human_attitude_beyond_prior": 0.011
+    },
+    "c13k_no_feedback_two_outcome": {
+      "n": 254,
+      "has_human_no_feedback_data": true,
+      "paired_mde_d": 0.176,
+      "paired_mde_d_layer_corrected": 0.259,
+      "auc_ci95_halfwidth_at_0.75": 0.042,
+      "tost_max_readout_sd": 0.271,
+      "tost_max_readout_sd_layer_corrected": 0.183,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.028,
+      "min_model_gap_for_ablation_third_detectable": 0.085,
+      "model_human_mde_r_observed": 0.175,
+      "model_human_mde_r_true": 0.255,
+      "human_correlation_ceiling": 0.69,
+      "human_attitude_beyond_prior": -0.007
+    },
+    "cpc18_ambiguous": {
+      "n": 40,
+      "has_human_no_feedback_data": true,
+      "paired_mde_d": 0.454,
+      "paired_mde_d_layer_corrected": 0.692,
+      "auc_ci95_halfwidth_at_0.75": 0.107,
+      "tost_max_readout_sd": 0.106,
+      "tost_max_readout_sd_layer_corrected": 0.069,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.093,
+      "min_model_gap_for_ablation_third_detectable": 0.28,
+      "model_human_mde_r_observed": 0.431,
+      "model_human_mde_r_true": 0.446,
+      "human_correlation_ceiling": 0.96,
+      "human_attitude_beyond_prior": -0.071
+    },
+    "cpc18_two_outcome": {
+      "n": 26,
+      "has_human_no_feedback_data": true,
+      "paired_mde_d": 0.572,
+      "paired_mde_d_layer_corrected": 0.895,
+      "auc_ci95_halfwidth_at_0.75": 0.133,
+      "tost_max_readout_sd": 0.084,
+      "tost_max_readout_sd_layer_corrected": 0.054,
+      "paired_mde_choice_rate_points_if_sd_as_humans": 0.113,
+      "min_model_gap_for_ablation_third_detectable": 0.338,
+      "model_human_mde_r_observed": 0.526,
+      "model_human_mde_r_true": 0.545,
+      "human_correlation_ceiling": 0.96,
+      "human_attitude_beyond_prior": -0.055
+    }
+  },
+  "h3b_comparison_set_risky_two_outcome_p_half": {
+    "c13k_unique_problems": 581,
+    "c13k_no_feedback": 98,
+    "cpc18": 22
+  }
+}
