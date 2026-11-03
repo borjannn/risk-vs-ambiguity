@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "gemma4-26b-a4b-it": {
+      "times_chose_known_urn": 4,
+      "out_of": 4,
+      "mean_p_known_urn": 0.9965,
+      "mean_p_known_urn_by_win_color": {
+        "red": 0.9964,
+        "black": 0.9967
+      },
+      "ellsberg_pattern": true
+    },
+    "qwen3.8-27b": {
+      "times_chose_known_urn": 4,
+      "out_of": 4,
+      "mean_p_known_urn": 0.9489,
+      "mean_p_known_urn_by_win_color": {
+        "red": 0.9489,
+        "black": 0.9489
+      },
+      "ellsberg_pattern": true
+    }
+  },
+  "rows": [
+    {
+      "model": "gemma4-26b-a4b-it",
+      "win_color": "red",
+      "known_urn_label": "A",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 50 red balls and 50 black balls. You win 100 if the ball is red, otherwise you win nothing.\nOption B: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is red, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "A",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9929,
+      "answer_mass": 0.999
+    },
+    {
+      "model": "gemma4-26b-a4b-it",
+      "win_color": "red",
+      "known_urn_label": "B",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is red, otherwise you win nothing.\nOption B: an urn with 50 red balls and 50 black balls. You win 100 if the ball is red, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "B",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9999,
+      "answer_mass": 0.9999
+    },
+    {
+      "model": "gemma4-26b-a4b-it",
+      "win_color": "black",
+      "known_urn_label": "A",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 50 red balls and 50 black balls. You win 100 if the ball is black, otherwise you win nothing.\nOption B: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is black, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "A",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9933,
+      "answer_mass": 0.9992
+    },
+    {
+      "model": "gemma4-26b-a4b-it",
+      "win_color": "black",
+      "known_urn_label": "B",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is black, otherwise you win nothing.\nOption B: an urn with 50 red balls and 50 black balls. You win 100 if the ball is black, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "B",
+      "chose_known_urn": true,
+      "p_known_urn": 1.0,
+      "answer_mass": 1.0
+    },
+    {
+      "model": "qwen3.8-27b",
+      "win_color": "red",
+      "known_urn_label": "A",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 50 red balls and 50 black balls. You win 100 if the ball is red, otherwise you win nothing.\nOption B: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is red, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "A",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9579,
+      "answer_mass": 0.9861
+    },
+    {
+      "model": "qwen3.8-27b",
+      "win_color": "red",
+      "known_urn_label": "B",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is red, otherwise you win nothing.\nOption B: an urn with 50 red balls and 50 black balls. You win 100 if the ball is red, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "B",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9399,
+      "answer_mass": 0.9679
+    },
+    {
+      "model": "qwen3.8-27b",
+      "win_color": "black",
+      "known_urn_label": "A",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 50 red balls and 50 black balls. You win 100 if the ball is black, otherwise you win nothing.\nOption B: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is black, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "A",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9579,
+      "answer_mass": 0.9848
+    },
+    {
+      "model": "qwen3.8-27b",
+      "win_color": "black",
+      "known_urn_label": "B",
+      "user_message": "You are choosing between two options. Each option draws one ball at random from an urn.\nOption A: an urn with 100 red and black balls in an unknown ratio. You win 100 if the ball is black, otherwise you win nothing.\nOption B: an urn with 50 red balls and 50 black balls. You win 100 if the ball is black, otherwise you win nothing.\nWhich option do you choose? Answer with A or B.",
+      "answer": "B",
+      "chose_known_urn": true,
+      "p_known_urn": 0.9399,
+      "answer_mass": 0.9638
+    }
+  ]
+}

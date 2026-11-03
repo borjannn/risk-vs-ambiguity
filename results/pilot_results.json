@@ -1,0 +1,1174 @@
+{
+  "last_run_finished": true,
+  "prompt_version": "v2_chat",
+  "prefill": "Answer:",
+  "pool": {
+    "feedback_only_ambiguous_non_uniform": 1946,
+    "two_outcome_share": 0.503
+  },
+  "problem_ids": [
+    66,
+    130,
+    177,
+    338,
+    367,
+    473,
+    601,
+    655,
+    704,
+    721,
+    760,
+    1006,
+    1146,
+    1242,
+    1284,
+    1457,
+    1550,
+    1960,
+    2300,
+    2601,
+    2647,
+    3185,
+    3214,
+    3576,
+    3706,
+    4074,
+    4272,
+    4604,
+    4610,
+    4813,
+    4923,
+    5297,
+    6059,
+    6098,
+    6289,
+    6363,
+    6526,
+    6574,
+    6708,
+    6969,
+    6996,
+    7236,
+    7329,
+    7341,
+    7392,
+    7711,
+    7737,
+    7743,
+    7807,
+    7913,
+    7939,
+    8169,
+    8221,
+    8382,
+    8392,
+    8648,
+    8698,
+    8723,
+    8783,
+    8794,
+    8888,
+    8968,
+    8993,
+    9024,
+    9172,
+    9177,
+    9386,
+    9565,
+    9655,
+    9659,
+    10061,
+    10284,
+    10321,
+    10350,
+    10355,
+    10468,
+    10483,
+    10572,
+    10582,
+    10725,
+    10853,
+    10948,
+    11031,
+    11199,
+    11273,
+    11383,
+    11445,
+    11638,
+    11752,
+    11762,
+    11803,
+    11858,
+    12168,
+    12229,
+    12244,
+    12301,
+    12544,
+    12679,
+    12985,
+    12991
+  ],
+  "layers_for_correction": 42,
+  "models": {
+    "gemma4-26b-a4b-it": {
+      "label_swap": {
+        "problems_complete": 100,
+        "mean_p_original_b": {
+          "ambiguous": {
+            "original_order": 0.5165,
+            "swapped_order": 0.0423,
+            "averaged": 0.2794
+          },
+          "true": {
+            "original_order": 0.8309,
+            "swapped_order": 0.0576,
+            "averaged": 0.4443
+          },
+          "uniform": {
+            "original_order": 0.772,
+            "swapped_order": 0.149,
+            "averaged": 0.4605
+          }
+        },
+        "mean_p_label_b": {
+          "ambiguous": 0.7371,
+          "true": 0.8866,
+          "uniform": 0.8115
+        },
+        "bias_to_label_b_logit": {
+          "ambiguous": {
+            "mean": 4.9079,
+            "ci95": [
+              4.5354,
+              5.2879
+            ],
+            "sd": 1.8968,
+            "sd_ci95": [
+              1.5362,
+              2.2291
+            ]
+          },
+          "true": {
+            "mean": 5.8446,
+            "ci95": [
+              5.3946,
+              6.2519
+            ],
+            "sd": 2.1534,
+            "sd_ci95": [
+              1.888,
+              2.3942
+            ]
+          },
+          "uniform": {
+            "mean": 5.3813,
+            "ci95": [
+              4.8228,
+              5.9003
+            ],
+            "sd": 2.6517,
+            "sd_ci95": [
+              2.1171,
+              3.1839
+            ]
+          }
+        },
+        "gaps_probability_original_order": {
+          "ambiguous_minus_true": {
+            "mean": -0.3144,
+            "ci95": [
+              -0.3955,
+              -0.2375
+            ],
+            "sd": 0.4252,
+            "sd_ci95": [
+              0.3816,
+              0.4625
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.2555,
+            "ci95": [
+              -0.3409,
+              -0.1731
+            ],
+            "sd": 0.437,
+            "sd_ci95": [
+              0.3826,
+              0.4856
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": 0.0589,
+            "ci95": [
+              -0.0032,
+              0.1235
+            ],
+            "sd": 0.3229,
+            "sd_ci95": [
+              0.2575,
+              0.3816
+            ]
+          }
+        },
+        "gaps_probability_swapped_order": {
+          "ambiguous_minus_true": {
+            "mean": -0.0153,
+            "ci95": [
+              -0.0591,
+              0.0233
+            ],
+            "sd": 0.2049,
+            "sd_ci95": [
+              0.1185,
+              0.275
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.1067,
+            "ci95": [
+              -0.1606,
+              -0.0566
+            ],
+            "sd": 0.2672,
+            "sd_ci95": [
+              0.1908,
+              0.3261
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.0914,
+            "ci95": [
+              -0.1472,
+              -0.0354
+            ],
+            "sd": 0.295,
+            "sd_ci95": [
+              0.2245,
+              0.3523
+            ]
+          }
+        },
+        "gaps_probability_averaged": {
+          "ambiguous_minus_true": {
+            "mean": -0.1648,
+            "ci95": [
+              -0.2127,
+              -0.1173
+            ],
+            "sd": 0.2505,
+            "sd_ci95": [
+              0.2191,
+              0.2823
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.1811,
+            "ci95": [
+              -0.2313,
+              -0.1331
+            ],
+            "sd": 0.2568,
+            "sd_ci95": [
+              0.2194,
+              0.2942
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.0163,
+            "ci95": [
+              -0.0651,
+              0.028
+            ],
+            "sd": 0.249,
+            "sd_ci95": [
+              0.197,
+              0.2959
+            ]
+          }
+        },
+        "gaps_logit_averaged": {
+          "ambiguous_minus_true": {
+            "mean": -2.4735,
+            "ci95": [
+              -3.3289,
+              -1.632
+            ],
+            "sd": 4.5266,
+            "sd_ci95": [
+              3.9897,
+              5.0199
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -3.7176,
+            "ci95": [
+              -4.5805,
+              -2.8703
+            ],
+            "sd": 4.4015,
+            "sd_ci95": [
+              3.7598,
+              4.9003
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -1.2441,
+            "ci95": [
+              -2.0378,
+              -0.4398
+            ],
+            "sd": 4.1702,
+            "sd_ci95": [
+              3.6059,
+              4.7564
+            ]
+          }
+        },
+        "gap_averaged_ambiguous_minus_true_by_a_type": {
+          "a_is_sure_thing": {
+            "mean": -0.0343,
+            "ci95": [
+              -0.0971,
+              0.0239
+            ],
+            "sd": 0.2192,
+            "sd_ci95": [
+              0.161,
+              0.263
+            ]
+          },
+          "a_is_a_gamble": {
+            "mean": -0.3063,
+            "ci95": [
+              -0.3632,
+              -0.2506
+            ],
+            "sd": 0.2018,
+            "sd_ci95": [
+              0.1595,
+              0.2438
+            ]
+          }
+        },
+        "power_if_sd_equals_averaged_ambiguous_minus_true": {
+          "human_comparison": {
+            "n": 452,
+            "behavioral_mde": 0.0331,
+            "min_gap_ablation_detect_any_closure": 0.1452,
+            "min_gap_ablation_lower_bound_third": 0.2903
+          },
+          "ambiguous_remaining": {
+            "n": 2413,
+            "behavioral_mde": 0.0143,
+            "min_gap_ablation_detect_any_closure": 0.0625,
+            "min_gap_ablation_lower_bound_third": 0.1251
+          },
+          "all_twins_remaining": {
+            "n": 11922,
+            "behavioral_mde": 0.0064,
+            "min_gap_ablation_detect_any_closure": 0.0281,
+            "min_gap_ablation_lower_bound_third": 0.0562
+          }
+        },
+        "power_if_sd_equals_averaged_ambiguous_minus_uniform": {
+          "human_comparison": {
+            "n": 452,
+            "behavioral_mde": 0.0339,
+            "min_gap_ablation_detect_any_closure": 0.1488,
+            "min_gap_ablation_lower_bound_third": 0.2976
+          },
+          "ambiguous_remaining": {
+            "n": 2413,
+            "behavioral_mde": 0.0147,
+            "min_gap_ablation_detect_any_closure": 0.0641,
+            "min_gap_ablation_lower_bound_third": 0.1282
+          },
+          "all_twins_remaining": {
+            "n": 11922,
+            "behavioral_mde": 0.0066,
+            "min_gap_ablation_detect_any_closure": 0.0288,
+            "min_gap_ablation_lower_bound_third": 0.0576
+          }
+        },
+        "sanity_averaged": {
+          "share_true_choosing_higher_ev": 0.76,
+          "share_uniform_choosing_higher_stated_ev": 0.79,
+          "spearman_true_logit_vs_true_ev_diff": 0.574,
+          "spearman_uniform_logit_vs_uniform_ev_diff": 0.725,
+          "spearman_ambiguous_logit_with_true": 0.484,
+          "spearman_ambiguous_logit_with_uniform": 0.626
+        }
+      },
+      "mean_p_b_true_by_ev": {
+        "b_has_higher_ev": 0.9897,
+        "b_has_lower_ev": 0.7322
+      },
+      "mean_p_b_ambiguous_by_uniform_ev": {
+        "b_has_higher_ev": 0.6396,
+        "b_has_lower_ev": 0.2278
+      },
+      "gap_ambiguous_minus_true_by_a_type": {
+        "a_is_sure_thing": {
+          "mean": -0.0921,
+          "ci95": [
+            -0.191,
+            -0.0018
+          ],
+          "sd": 0.3547,
+          "sd_ci95": [
+            0.2626,
+            0.4298
+          ]
+        },
+        "a_is_a_gamble": {
+          "mean": -0.5552,
+          "ci95": [
+            -0.6571,
+            -0.4564
+          ],
+          "sd": 0.3611,
+          "sd_ci95": [
+            0.3123,
+            0.395
+          ]
+        }
+      },
+      "problems_complete": 100,
+      "stimuli_unreadable": 0,
+      "answer_mass": {
+        "mean": 0.9995,
+        "min": 0.9966,
+        "share_below_0.99": 0.0
+      },
+      "stimuli_with_one_option_outside_top20": 0,
+      "mean_p_b": {
+        "ambiguous": 0.5165,
+        "true": 0.8309,
+        "uniform": 0.772
+      },
+      "share_saturated": {
+        "p_below_.01_or_above_.99": 0.567,
+        "p_below_.05_or_above_.95": 0.697
+      },
+      "share_answering_B": {
+        "ambiguous": 0.49,
+        "true": 0.84,
+        "uniform": 0.78
+      },
+      "gaps_probability": {
+        "ambiguous_minus_true": {
+          "mean": -0.3144,
+          "ci95": [
+            -0.399,
+            -0.2283
+          ],
+          "sd": 0.4252,
+          "sd_ci95": [
+            0.3825,
+            0.4652
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -0.2555,
+          "ci95": [
+            -0.3449,
+            -0.1701
+          ],
+          "sd": 0.437,
+          "sd_ci95": [
+            0.3827,
+            0.4864
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": 0.0589,
+          "ci95": [
+            -0.0014,
+            0.1226
+          ],
+          "sd": 0.3229,
+          "sd_ci95": [
+            0.2599,
+            0.3799
+          ]
+        }
+      },
+      "gaps_logit": {
+        "ambiguous_minus_true": {
+          "mean": -3.4102,
+          "ci95": [
+            -4.4635,
+            -2.3751
+          ],
+          "sd": 5.3507,
+          "sd_ci95": [
+            4.6465,
+            5.9469
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -4.191,
+          "ci95": [
+            -5.3058,
+            -3.1376
+          ],
+          "sd": 5.4343,
+          "sd_ci95": [
+            4.6075,
+            6.1985
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": -0.7808,
+          "ci95": [
+            -1.7935,
+            0.2675
+          ],
+          "sd": 5.1349,
+          "sd_ci95": [
+            4.4153,
+            5.8602
+          ]
+        }
+      },
+      "gaps_probability_two_outcome": {
+        "ambiguous_minus_true": {
+          "mean": -0.3728,
+          "ci95": [
+            -0.5068,
+            -0.2406
+          ],
+          "sd": 0.488,
+          "sd_ci95": [
+            0.4208,
+            0.5464
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -0.2733,
+          "ci95": [
+            -0.409,
+            -0.1289
+          ],
+          "sd": 0.5151,
+          "sd_ci95": [
+            0.434,
+            0.5891
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": 0.0995,
+          "ci95": [
+            -0.017,
+            0.2153
+          ],
+          "sd": 0.4184,
+          "sd_ci95": [
+            0.3281,
+            0.4935
+          ]
+        }
+      },
+      "n_two_outcome": 50,
+      "power_if_sd_equals_ambiguous_minus_true": {
+        "human_comparison": {
+          "n": 452,
+          "behavioral_mde": 0.0561,
+          "min_gap_ablation_detect_any_closure": 0.2464,
+          "min_gap_ablation_lower_bound_third": 0.4927
+        },
+        "ambiguous_remaining": {
+          "n": 2413,
+          "behavioral_mde": 0.0243,
+          "min_gap_ablation_detect_any_closure": 0.1061,
+          "min_gap_ablation_lower_bound_third": 0.2122
+        },
+        "all_twins_remaining": {
+          "n": 11922,
+          "behavioral_mde": 0.0109,
+          "min_gap_ablation_detect_any_closure": 0.0477,
+          "min_gap_ablation_lower_bound_third": 0.0954
+        }
+      },
+      "power_if_sd_equals_ambiguous_minus_uniform": {
+        "human_comparison": {
+          "n": 452,
+          "behavioral_mde": 0.0577,
+          "min_gap_ablation_detect_any_closure": 0.2532,
+          "min_gap_ablation_lower_bound_third": 0.5065
+        },
+        "ambiguous_remaining": {
+          "n": 2413,
+          "behavioral_mde": 0.0249,
+          "min_gap_ablation_detect_any_closure": 0.1091,
+          "min_gap_ablation_lower_bound_third": 0.2182
+        },
+        "all_twins_remaining": {
+          "n": 11922,
+          "behavioral_mde": 0.0112,
+          "min_gap_ablation_detect_any_closure": 0.049,
+          "min_gap_ablation_lower_bound_third": 0.0981
+        }
+      },
+      "sanity": {
+        "spearman_true_logit_vs_true_ev_diff": 0.579,
+        "share_true_choosing_higher_ev": 0.53,
+        "spearman_uniform_logit_vs_uniform_ev_diff": 0.733,
+        "spearman_ambiguous_logit_vs_true_ev_diff": 0.309,
+        "spearman_ambiguous_logit_vs_uniform_ev_diff": 0.483
+      },
+      "ambiguous_closeness": {
+        "mean_abs_p_diff_to_true": 0.3718,
+        "mean_abs_p_diff_to_uniform": 0.3297,
+        "spearman_logit_with_true": 0.474,
+        "spearman_logit_with_uniform": 0.607
+      },
+      "prompt_tokens_mean": {
+        "ambiguous": 79.3,
+        "true": 94.1,
+        "uniform": 95.1
+      },
+      "prompt_token_diff_ambiguous_minus_true": {
+        "mean": -14.82,
+        "sd": 14.28
+      },
+      "share_logit_gaps_on_eighths": 0.423,
+      "distinct_logit_values": 235,
+      "determinism": {
+        "repeats": 20,
+        "max_abs_logit_change": 1.5
+      }
+    },
+    "qwen3.8-27b": {
+      "label_swap": {
+        "problems_complete": 100,
+        "mean_p_original_b": {
+          "ambiguous": {
+            "original_order": 0.288,
+            "swapped_order": 0.3595,
+            "averaged": 0.3237
+          },
+          "true": {
+            "original_order": 0.3784,
+            "swapped_order": 0.4464,
+            "averaged": 0.4124
+          },
+          "uniform": {
+            "original_order": 0.4668,
+            "swapped_order": 0.5136,
+            "averaged": 0.4902
+          }
+        },
+        "mean_p_label_b": {
+          "ambiguous": 0.4643,
+          "true": 0.466,
+          "uniform": 0.4766
+        },
+        "bias_to_label_b_logit": {
+          "ambiguous": {
+            "mean": -0.2163,
+            "ci95": [
+              -0.2869,
+              -0.1419
+            ],
+            "sd": 0.3716,
+            "sd_ci95": [
+              0.2975,
+              0.4325
+            ]
+          },
+          "true": {
+            "mean": -0.1644,
+            "ci95": [
+              -0.2238,
+              -0.1038
+            ],
+            "sd": 0.3007,
+            "sd_ci95": [
+              0.2433,
+              0.3588
+            ]
+          },
+          "uniform": {
+            "mean": -0.1469,
+            "ci95": [
+              -0.2206,
+              -0.0731
+            ],
+            "sd": 0.3729,
+            "sd_ci95": [
+              0.299,
+              0.438
+            ]
+          }
+        },
+        "gaps_probability_original_order": {
+          "ambiguous_minus_true": {
+            "mean": -0.0904,
+            "ci95": [
+              -0.1365,
+              -0.0424
+            ],
+            "sd": 0.2457,
+            "sd_ci95": [
+              0.2095,
+              0.2785
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.1788,
+            "ci95": [
+              -0.2159,
+              -0.1439
+            ],
+            "sd": 0.1845,
+            "sd_ci95": [
+              0.1588,
+              0.2078
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.0884,
+            "ci95": [
+              -0.1306,
+              -0.0475
+            ],
+            "sd": 0.215,
+            "sd_ci95": [
+              0.1856,
+              0.2414
+            ]
+          }
+        },
+        "gaps_probability_swapped_order": {
+          "ambiguous_minus_true": {
+            "mean": -0.0869,
+            "ci95": [
+              -0.122,
+              -0.0536
+            ],
+            "sd": 0.1786,
+            "sd_ci95": [
+              0.1515,
+              0.2056
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.1541,
+            "ci95": [
+              -0.1766,
+              -0.1312
+            ],
+            "sd": 0.1173,
+            "sd_ci95": [
+              0.094,
+              0.1381
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.0672,
+            "ci95": [
+              -0.1019,
+              -0.0304
+            ],
+            "sd": 0.1854,
+            "sd_ci95": [
+              0.1586,
+              0.2102
+            ]
+          }
+        },
+        "gaps_probability_averaged": {
+          "ambiguous_minus_true": {
+            "mean": -0.0887,
+            "ci95": [
+              -0.1244,
+              -0.053
+            ],
+            "sd": 0.1904,
+            "sd_ci95": [
+              0.1637,
+              0.2142
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.1665,
+            "ci95": [
+              -0.1916,
+              -0.1419
+            ],
+            "sd": 0.126,
+            "sd_ci95": [
+              0.1074,
+              0.1434
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.0778,
+            "ci95": [
+              -0.1158,
+              -0.0409
+            ],
+            "sd": 0.1892,
+            "sd_ci95": [
+              0.1632,
+              0.212
+            ]
+          }
+        },
+        "gaps_logit_averaged": {
+          "ambiguous_minus_true": {
+            "mean": -0.4631,
+            "ci95": [
+              -0.6319,
+              -0.2906
+            ],
+            "sd": 0.8933,
+            "sd_ci95": [
+              0.7746,
+              0.9945
+            ]
+          },
+          "ambiguous_minus_uniform": {
+            "mean": -0.7869,
+            "ci95": [
+              -0.9037,
+              -0.6712
+            ],
+            "sd": 0.5885,
+            "sd_ci95": [
+              0.4865,
+              0.6794
+            ]
+          },
+          "true_minus_uniform": {
+            "mean": -0.3237,
+            "ci95": [
+              -0.5031,
+              -0.1425
+            ],
+            "sd": 0.8743,
+            "sd_ci95": [
+              0.7467,
+              0.9889
+            ]
+          }
+        },
+        "gap_averaged_ambiguous_minus_true_by_a_type": {
+          "a_is_sure_thing": {
+            "mean": -0.0825,
+            "ci95": [
+              -0.141,
+              -0.0257
+            ],
+            "sd": 0.2096,
+            "sd_ci95": [
+              0.1705,
+              0.2418
+            ]
+          },
+          "a_is_a_gamble": {
+            "mean": -0.0954,
+            "ci95": [
+              -0.1426,
+              -0.0462
+            ],
+            "sd": 0.169,
+            "sd_ci95": [
+              0.1312,
+              0.1995
+            ]
+          }
+        },
+        "power_if_sd_equals_averaged_ambiguous_minus_true": {
+          "human_comparison": {
+            "n": 452,
+            "behavioral_mde": 0.0251,
+            "min_gap_ablation_detect_any_closure": 0.1103,
+            "min_gap_ablation_lower_bound_third": 0.2206
+          },
+          "ambiguous_remaining": {
+            "n": 2413,
+            "behavioral_mde": 0.0109,
+            "min_gap_ablation_detect_any_closure": 0.0475,
+            "min_gap_ablation_lower_bound_third": 0.095
+          },
+          "all_twins_remaining": {
+            "n": 11922,
+            "behavioral_mde": 0.0049,
+            "min_gap_ablation_detect_any_closure": 0.0214,
+            "min_gap_ablation_lower_bound_third": 0.0427
+          }
+        },
+        "power_if_sd_equals_averaged_ambiguous_minus_uniform": {
+          "human_comparison": {
+            "n": 452,
+            "behavioral_mde": 0.0166,
+            "min_gap_ablation_detect_any_closure": 0.073,
+            "min_gap_ablation_lower_bound_third": 0.146
+          },
+          "ambiguous_remaining": {
+            "n": 2413,
+            "behavioral_mde": 0.0072,
+            "min_gap_ablation_detect_any_closure": 0.0314,
+            "min_gap_ablation_lower_bound_third": 0.0629
+          },
+          "all_twins_remaining": {
+            "n": 11922,
+            "behavioral_mde": 0.0032,
+            "min_gap_ablation_detect_any_closure": 0.0141,
+            "min_gap_ablation_lower_bound_third": 0.0283
+          }
+        },
+        "sanity_averaged": {
+          "share_true_choosing_higher_ev": 0.72,
+          "share_uniform_choosing_higher_stated_ev": 0.76,
+          "spearman_true_logit_vs_true_ev_diff": 0.437,
+          "spearman_uniform_logit_vs_uniform_ev_diff": 0.719,
+          "spearman_ambiguous_logit_with_true": 0.156,
+          "spearman_ambiguous_logit_with_uniform": 0.752
+        }
+      },
+      "mean_p_b_true_by_ev": {
+        "b_has_higher_ev": 0.4537,
+        "b_has_lower_ev": 0.339
+      },
+      "mean_p_b_ambiguous_by_uniform_ev": {
+        "b_has_higher_ev": 0.354,
+        "b_has_lower_ev": 0.1484
+      },
+      "gap_ambiguous_minus_true_by_a_type": {
+        "a_is_sure_thing": {
+          "mean": -0.0723,
+          "ci95": [
+            -0.1456,
+            0.0019
+          ],
+          "sd": 0.2714,
+          "sd_ci95": [
+            0.2126,
+            0.3211
+          ]
+        },
+        "a_is_a_gamble": {
+          "mean": -0.1099,
+          "ci95": [
+            -0.1688,
+            -0.0488
+          ],
+          "sd": 0.2156,
+          "sd_ci95": [
+            0.1709,
+            0.2517
+          ]
+        }
+      },
+      "problems_complete": 100,
+      "stimuli_unreadable": 0,
+      "answer_mass": {
+        "mean": 0.9792,
+        "min": 0.9381,
+        "share_below_0.99": 0.933
+      },
+      "stimuli_with_one_option_outside_top20": 0,
+      "mean_p_b": {
+        "ambiguous": 0.288,
+        "true": 0.3784,
+        "uniform": 0.4668
+      },
+      "share_saturated": {
+        "p_below_.01_or_above_.99": 0.0,
+        "p_below_.05_or_above_.95": 0.023
+      },
+      "share_answering_B": {
+        "ambiguous": 0.12,
+        "true": 0.21,
+        "uniform": 0.44
+      },
+      "gaps_probability": {
+        "ambiguous_minus_true": {
+          "mean": -0.0904,
+          "ci95": [
+            -0.1394,
+            -0.0425
+          ],
+          "sd": 0.2457,
+          "sd_ci95": [
+            0.2062,
+            0.2782
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -0.1788,
+          "ci95": [
+            -0.2144,
+            -0.1433
+          ],
+          "sd": 0.1845,
+          "sd_ci95": [
+            0.1594,
+            0.2068
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": -0.0884,
+          "ci95": [
+            -0.129,
+            -0.0429
+          ],
+          "sd": 0.215,
+          "sd_ci95": [
+            0.1862,
+            0.2408
+          ]
+        }
+      },
+      "gaps_logit": {
+        "ambiguous_minus_true": {
+          "mean": -0.515,
+          "ci95": [
+            -0.7288,
+            -0.295
+          ],
+          "sd": 1.1584,
+          "sd_ci95": [
+            0.9855,
+            1.3184
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -0.8562,
+          "ci95": [
+            -1.0212,
+            -0.6925
+          ],
+          "sd": 0.8381,
+          "sd_ci95": [
+            0.714,
+            0.9483
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": -0.3412,
+          "ci95": [
+            -0.5388,
+            -0.1412
+          ],
+          "sd": 1.0167,
+          "sd_ci95": [
+            0.8859,
+            1.1294
+          ]
+        }
+      },
+      "gaps_probability_two_outcome": {
+        "ambiguous_minus_true": {
+          "mean": -0.2341,
+          "ci95": [
+            -0.2842,
+            -0.1853
+          ],
+          "sd": 0.1861,
+          "sd_ci95": [
+            0.1576,
+            0.2093
+          ]
+        },
+        "ambiguous_minus_uniform": {
+          "mean": -0.2637,
+          "ci95": [
+            -0.3164,
+            -0.2147
+          ],
+          "sd": 0.1786,
+          "sd_ci95": [
+            0.1498,
+            0.2015
+          ]
+        },
+        "true_minus_uniform": {
+          "mean": -0.0296,
+          "ci95": [
+            -0.098,
+            0.039
+          ],
+          "sd": 0.2559,
+          "sd_ci95": [
+            0.2155,
+            0.2888
+          ]
+        }
+      },
+      "n_two_outcome": 50,
+      "power_if_sd_equals_ambiguous_minus_true": {
+        "human_comparison": {
+          "n": 452,
+          "behavioral_mde": 0.0325,
+          "min_gap_ablation_detect_any_closure": 0.1424,
+          "min_gap_ablation_lower_bound_third": 0.2848
+        },
+        "ambiguous_remaining": {
+          "n": 2413,
+          "behavioral_mde": 0.014,
+          "min_gap_ablation_detect_any_closure": 0.0613,
+          "min_gap_ablation_lower_bound_third": 0.1227
+        },
+        "all_twins_remaining": {
+          "n": 11922,
+          "behavioral_mde": 0.0063,
+          "min_gap_ablation_detect_any_closure": 0.0276,
+          "min_gap_ablation_lower_bound_third": 0.0551
+        }
+      },
+      "power_if_sd_equals_ambiguous_minus_uniform": {
+        "human_comparison": {
+          "n": 452,
+          "behavioral_mde": 0.0244,
+          "min_gap_ablation_detect_any_closure": 0.1069,
+          "min_gap_ablation_lower_bound_third": 0.2139
+        },
+        "ambiguous_remaining": {
+          "n": 2413,
+          "behavioral_mde": 0.0105,
+          "min_gap_ablation_detect_any_closure": 0.0461,
+          "min_gap_ablation_lower_bound_third": 0.0921
+        },
+        "all_twins_remaining": {
+          "n": 11922,
+          "behavioral_mde": 0.0047,
+          "min_gap_ablation_detect_any_closure": 0.0207,
+          "min_gap_ablation_lower_bound_third": 0.0414
+        }
+      },
+      "sanity": {
+        "spearman_true_logit_vs_true_ev_diff": 0.396,
+        "share_true_choosing_higher_ev": 0.64,
+        "spearman_uniform_logit_vs_uniform_ev_diff": 0.673,
+        "spearman_ambiguous_logit_vs_true_ev_diff": 0.261,
+        "spearman_ambiguous_logit_vs_uniform_ev_diff": 0.656
+      },
+      "ambiguous_closeness": {
+        "mean_abs_p_diff_to_true": 0.2047,
+        "mean_abs_p_diff_to_uniform": 0.2093,
+        "spearman_logit_with_true": 0.152,
+        "spearman_logit_with_uniform": 0.667
+      },
+      "prompt_tokens_mean": {
+        "ambiguous": 82.3,
+        "true": 97.1,
+        "uniform": 98.1
+      },
+      "prompt_token_diff_ambiguous_minus_true": {
+        "mean": -14.82,
+        "sd": 14.28
+      },
+      "share_logit_gaps_on_eighths": 1.0,
+      "distinct_logit_values": 43,
+      "determinism": {
+        "repeats": 20,
+        "max_abs_logit_change": 0.0
+      }
+    }
+  }
+}

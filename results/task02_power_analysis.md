@@ -66,4 +66,6 @@ To have something to compare the MDEs against, I estimated the human ambiguity e
 
 ## Next step: model pilot (replaces the placeholder scale)
 
+**Update:** the pilot has been run on both models. Averaged over both orders, the model SD is 1.1–2.3× the placeholder, and the 452-problem behavioral MDE is 1.7–3.4 points, so the "under 2 points" claim below doesn't hold for every gap. See [`task02_model_pilot.md`](task02_model_pilot.md).
+
 Run the chosen model on about 100 choices13k ambiguous problems plus both twins. Read P(choose B) from the logits, and rerun this script with the model's own per-problem SD. It needs the model list (open issue 4 in the plan). The verdict is robust to that: even at 3× the human SD, the choices13k behavioral MDE stays under 2 choice-rate points.
