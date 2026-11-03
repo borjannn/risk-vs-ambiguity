@@ -10,3 +10,6 @@ __pycache__/
 
 # Raw and derived data (re-download with scripts/download_data.py)
 data/
+
+# Local credentials
+.env
